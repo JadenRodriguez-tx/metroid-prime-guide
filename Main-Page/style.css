@@ -15,43 +15,51 @@ h1 {
     font-size: 30px;
     color: #fff;
     background-color: #1a1a1a;
+    margin-bottom: 20px;
     padding: 50px;
 }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #ddd;
-    margin: 0;
-    padding: 0;
+#nav {
+    list-style: none;
+    width: 750px;
+    margin: 0 auto;
 }
 
-li {
+#nav li {
     float: left;
-    transition: background-color 1s;
 }
 
-li a {
+#nav a {
     font-family: 'Heebo', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
     text-align: center;
     text-decoration: none;
     color: #000;
     display: block;
-    padding: 14px 16px;
+    width: 150px;
 }
 
 li:hover {
-    background-color: #a6a6a6;
+    color: #a6a6a6; /* Change transition to a line that expands underneath each selection */
 }
 
-p {
+#welcome {
     font-family: 'Heebo', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 100px;
+    margin-bottom: 45px;
+    animation-name: welcome-fade-in;
+    animation-duration: 3s;
 }
 
-/* Make animation for p element */
+@keyframes welcome-fade-in {
+    0% {opacity: 0; bottom: 40px;}
+    100% {opacity: 1; bottom: 0px;}
+}
+
+#how-to-use {
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
