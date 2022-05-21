@@ -9,10 +9,12 @@
 }
 
 h1 {
+    font-family: 'Play', sans-serif;
+    font-weight: 200;
     text-align: center;
     font-size: 30px;
     color: #fff;
-    background-color: #000;
+    background-color: #1a1a1a;
     padding: 50px;
 }
 
@@ -26,12 +28,30 @@ ul {
 
 li {
     float: left;
+    transition: background-color 1s;
 }
 
 li a {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
     text-align: center;
     text-decoration: none;
     color: #000;
     display: block;
     padding: 14px 16px;
 }
+
+li:hover {
+    background-color: #a6a6a6;
+}
+
+p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Make animation for p element */
